@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    background-color: white;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+</style>
+</head>
+<body style="background-image: url('grey.jpg')">
+
+<h2 style= "text-align:center">Meet The Team</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Rocky" style="width:100%">
+      <div class="container">
+        <h2>Rohan Arora</h2>
+        <p class="title">Creator</p>
+        <p>Roll NO:151326</p>
+        <p>Batch: X-12</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Hims" style="width:100%">
+      <div class="container">
+        <h2>Himanshu Khushwah</h2>
+        <p class="title">Creator</p>
+        <p>Roll NO:151361</p>
+        <p>Batch: X-12</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Dr. Amit Kumar Singh" style="width:100%">
+      <div class="container">
+        <h2>Dr. Amit Kumar Singh</h2>
+        <p class="title">Mentor</p>
+        <p>CSE</p>
+        <p>Department</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

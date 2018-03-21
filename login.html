@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>Form</title>
+<style>
+
+input[type=text], input[type=password],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #a4a1a1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #a4a1a1;
+}
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%s
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.container {
+    padding: 20px;
+    width:500px;
+    background:#fff;
+}
+    form{
+    border: 2px solid #ccc;
+    width: 540px;
+    margin: 10px 400px;
+    }
+    img{
+    
+        /*margin-left: 160px;*/
+    }
+    body{
+      background-image:url("Chess1.jpg");
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center">Login for Master Chessy</h1><br /><br/>
+<form method="post" action="">
+<div class="container">
+<img src="signupbox.jpg" style="width:500px">
+<br /><br /><br />
+<legend><b>Username</b></legend>
+<input type="text" name="username" placeholder="Enter username" required><br /><br />
+<legend><b>Password</b></legend>
+<input type="password" name="psw" placeholder="Enter password" required><br /><br />
+<div class="clearfix">
+      <button type="submit" class="signupbtn">Log-in</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+</div>
+</form>
+</body>
+</html>
